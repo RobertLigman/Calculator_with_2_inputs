@@ -10,8 +10,19 @@
 <body>
     <input type="number" placeholder="wprowadz pierwsza liczbe" data-label="first-input" />
     <input type="number" placeholder="wprowadz drugą liczbe" data-label="second-input" />
-    <div class="calculation-type" data-label="calculation-type">
+    <!-- <div class="calculation-type" data-label="calculation-type">
         Typ działania: dodawanie
+    </div> -->
+
+    <div>
+        <input type="radio" id="add" name="calculation-type" value="add" />
+        <label for="add">Add (+) </label>
+        <input type="radio" id="substract" name="calculation-type" value="substract" checked />
+        <label for="substract">Substract (-) </label>
+        <input type="radio" id="multiple" name="calculation-type" value="multiple" />
+        <label for="multiple">Multiple (*) </label>
+        <input type="radio" id="divide" name="calculation-type" value="divide" />
+        <label for="divide">divide (/) </label>
     </div>
     <button data-label="calculate">Oblicz</button>
     <div class="output" data-label="output"></div>
